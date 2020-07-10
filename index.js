@@ -74,7 +74,7 @@ console.log(string4-string5);
 var string6=`Vishal 6+4`;
 console.log(string6);
 //expression execute
-var string7=`vishal ${6+4}`;
+var string7=`vishal ${6+4*10-500/10}`;
 console.log(string7);
 //not work because you must start string with tilde symbol (`)
 var string8='vishal ${6+4}';
