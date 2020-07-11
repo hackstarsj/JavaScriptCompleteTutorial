@@ -6,4 +6,4 @@ Added Variable Declaration<br>
 Added Datatype <br>
 Added Function Tutorial<br>
 Added Calculator Made Using HTML,Bootstrap,JavaScript<br><br>
-<img src="js_calculator.PNG" alt="JavaScript Calculator"> 
+<img src="screenshots/js_calculator.PNG" alt="JavaScript Calculator"> 
