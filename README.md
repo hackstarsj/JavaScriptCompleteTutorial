@@ -8,10 +8,10 @@ Added Function Tutorial<br>
 Added Calculator Made Using HTML,Bootstrap,JavaScript<br><br>
 <img src="screenshots/js_calculator.PNG" alt="JavaScript Calculator"> <br>
 
-Added JavaScript Array Tutorial<br>
+<h4>Added JavaScript Array Tutorial</h4><br><br>
 <img src="screenshots/array1.PNG"><br>
 <img src="screenshots/array2.PNG">
 <br>
 <br>
-Added JavaScript Objects Tutorial
+<h4>Added JavaScript Objects Tutorial</h4><br><br>
 <img src="screenshots/js_object.PNG">
