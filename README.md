@@ -16,6 +16,6 @@ Added Calculator Made Using HTML,Bootstrap,JavaScript<br><br>
 <h4>Added JavaScript Objects Tutorial</h4><br><br>
 <img src="screenshots/js_object.PNG">
 
-##Added Calculator With Log Using JavaScript Objects and Array.
+## Added Calculator With Log Using JavaScript Objects and Array.
 
 <img src="screenshots/calculator_with_log.PNG">.
