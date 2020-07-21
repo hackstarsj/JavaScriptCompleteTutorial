@@ -19,3 +19,7 @@ Added Calculator Made Using HTML,Bootstrap,JavaScript<br><br>
 ## Added Calculator With Log Using JavaScript Objects and Array.
 
 <img src="screenshots/calculator_with_log.PNG">.
+
+## Added JavaScript Complete Function Tutorial From Basic to Advance.
+
+<img src="screenshots/js_functionss.PNG"/>.
