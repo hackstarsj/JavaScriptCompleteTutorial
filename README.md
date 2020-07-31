@@ -23,3 +23,9 @@ Added Calculator Made Using HTML,Bootstrap,JavaScript<br><br>
 ## Added JavaScript Complete Function Tutorial From Basic to Advance.
 
 <img src="screenshots/js_functionss.PNG"/>.
+
+## Added JavaScript DOM Selector Change Property and Values.
+
+<img src="screenshots/dom2.PNG"><br>
+<img src="screenshots/dom21.PNG"><br>
+<img src="screenshots/dom22.PNG"><br>
