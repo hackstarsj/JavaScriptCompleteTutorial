@@ -79,7 +79,6 @@ for(var li of listitem){
 
 //Second Method for Appending Content in HTML
 var listitem=document.querySelectorAll("ul");
-
 for(var li of listitem){
 
     var newlinode=document.createElement("li");
