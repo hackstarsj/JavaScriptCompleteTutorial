@@ -33,3 +33,6 @@ Added Calculator Made Using HTML,Bootstrap,JavaScript<br><br>
 ## Added JavaScript Local Storage Tutorial.
 
 <img src="screenshots/js_local.PNG">
+
+## For Ajax Tutorial Follow This Repo.
+<a href="https://github.com/hackstarsj/JavaScriptAjaxCompleteTutorial">JavaScript Ajax Tutorial</a>
