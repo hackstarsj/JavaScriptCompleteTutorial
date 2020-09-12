@@ -1,0 +1,30 @@
+<html>
+  <body>
+    <form
+      action="/save.php"
+      method="POST"
+      name="dataform"
+      onsubmit="return ValidateForm()"
+    >
+      <label>Name : </label><br />
+      <input type="text" name="name" placeholder="Name " /><br />
+      <label>Email : </label><br />
+      <input type="text" name="email" placeholder="email " /><br />
+      <label>Age : </label><br />
+      <input type="text" name="age" placeholder="Age " /><br />
+      <label>Course : </label><br />
+      <select name="course">
+        <option>BCA</option>
+        <option>MCA</option>
+        <option>BBA</option>
+        <option>MBA</option>
+      </select>
+      <br />
+      <label>Message</label>
+      <br />
+      <textarea name="message"></textarea><br />
+      <button type="submit">Save DATA</button>
+    </form>
+    <script src="js_validation.js"></script>
+  </body>
+</html>
