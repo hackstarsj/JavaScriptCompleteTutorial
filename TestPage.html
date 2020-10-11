@@ -1,0 +1,207 @@
+<html>
+  <head>
+    <title>JavaScript Shopping CART EXAMPLE</title>
+    <style>
+      .title {
+        text-align: center;
+        color: blueviolet;
+        padding: 10px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .item {
+        padding: 10px;
+        border: 3px solid blueviolet;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px grey;
+        text-align: center;
+      }
+      .item .image {
+        width: 100%;
+        text-align: center;
+        height: auto;
+      }
+      .item .price {
+        padding: 5px;
+        color: purple;
+        border: 1px solid purple;
+        font-weight: bold;
+        text-decoration: solid;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .item .add_cart {
+        padding: 10px;
+        background: purple;
+        color: #fff;
+        border: 1px solid white;
+        text-align: center;
+        margin-left: auto;
+        border-radius: 5px;
+        margin-right: auto;
+        box-shadow: 1px 1px 1px grey;
+      }
+      #order_card .left {
+        float: left;
+        width: 50%;
+        text-align: left;
+      }
+      #order_card .right {
+        float: right;
+        width: 50%;
+        text-align: right;
+      }
+      #item_list {
+        clear: both;
+      }
+      #order_card {
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        border: 1px solid purple;
+      }
+      #order_card p {
+        padding: 5px;
+        color: blueviolet;
+        font-size: 20px;
+      }
+
+      #check_out {
+        background-color: darkmagenta;
+        color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        border: 3px solid orange;
+        width: 80%;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .text-center {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="order_card">
+      <p class="left" id="item_total">Total Items : 0</p>
+      <p class="right" id="amount_total">Total Amount : 0</p>
+    </div>
+    <div class="text-center">
+      <button id="check_out">CHECK OUT</button>
+    </div>
+    <div id="item_list"></div>
+    <script>
+      class Products {
+        id;
+        name;
+        image;
+        price;
+        constructor(id, name, image, price) {
+          this.id = id;
+          this.name = name;
+          this.image = image;
+          this.price = price;
+        }
+
+        getName() {
+          return this.name.toUpperCase();
+        }
+      }
+
+      class App {
+        productList = [
+          new Products(
+            1,
+            "Mobile",
+            "https://i0.wp.com/technosports.co.in/wp-content/uploads/2020/09/ezgif-4-3101a6e3d7c6.jpg?w=800&ssl=1",
+            "100"
+          ),
+          new CustomProducts(
+            2,
+            "Mobile 2",
+            "https://i0.wp.com/technosports.co.in/wp-content/uploads/2020/09/ezgif-4-3101a6e3d7c6.jpg?w=800&ssl=1",
+            "200",
+            "Simple Product"
+          ),
+        ];
+
+        render() {
+          var htmlParent = document.getElementById("item_list");
+          var check_out = document.getElementById("check_out");
+
+          this.productList.forEach((item, index) => {
+            var div = document.createElement("div");
+            div.className = "item";
+            div.innerHTML = "<img class='image' src=" + item.image + "/>";
+            div.innerHTML += "<h2 class='title'>" + item.getName() + "</h2>";
+            div.innerHTML +=
+              "<p class='price'>Price - Rs : " + item.price + "</p>";
+
+            var btn = document.createElement("button");
+            btn.textContent = "ADD TO CART";
+            btn.className = "add_cart";
+
+            div.appendChild(btn);
+
+            htmlParent.appendChild(div);
+
+            btn.addEventListener("click", this.addItemToCart.bind(item));
+            check_out.addEventListener("click", this.ShowCartDetails);
+          });
+        }
+
+        addItemToCart() {
+          var cart = new Cart();
+          cart.render(this);
+        }
+        ShowCartDetails() {
+          console.log(ShoppingItem.getItems());
+        }
+      }
+
+      class CustomProducts extends Products {
+        description;
+        constructor(id, name, image, price, description) {
+          super(id, name, image, price);
+          this.description = description;
+        }
+
+        //Overiding
+        getName() {
+          return this.name.toLowerCase();
+        }
+      }
+
+      class Cart {
+        render(product) {
+          var total_amount_div = document.getElementById("amount_total");
+          var total_item_div = document.getElementById("item_total");
+          ShoppingItem.Additems(product);
+          var total_amount = 0;
+          var total_quantity = 0;
+          ShoppingItem.getItems().forEach((item, index) => {
+            total_amount += parseFloat(item.price);
+            total_quantity += 1;
+          });
+
+          total_amount_div.textContent = "Total - Rs : " + total_amount;
+          total_item_div.textContent = "Quantity - Rs : " + total_quantity;
+        }
+      }
+
+      class ShoppingItem {
+        static itemList = [];
+        static Additems(item) {
+          ShoppingItem.itemList.push(item);
+        }
+        static getItems() {
+          return ShoppingItem.itemList;
+        }
+      }
+      var app = new App();
+      app.render();
+    </script>
+  </body>
+</html>
