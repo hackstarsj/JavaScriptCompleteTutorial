@@ -49,6 +49,7 @@ class Mobiles extends ProductItems {
     this.size = size;
     this.storage = storage;
   }
+  //Method Overiding
   getProductFullDetails() {
     return (
       "Name : " +

@@ -2,6 +2,10 @@
 
 JavaScriptCompleteTutorial
 
+## Complete Tutorial Video Link :
+
+<a href="https://www.youtube.com/playlist?list=PLb-NlfexLTk-BioU1l_MDuAYnEGCIEm06">https://www.youtube.com/playlist?list=PLb-NlfexLTk-BioU1l_MDuAYnEGCIEm06</a>
+
 Added Basic Example<br>
 Added Variable Declaration<br>
 Added Datatype <br>
@@ -225,4 +229,37 @@ Tutorial Cover :
 40. Use of this Keyword Inside Object
 
 41. How to Use this Keyword Inside Objects in JavaScript
+</pre>
+
+## JavaScript OOP Class and Objects Tutorial
+
+<pre>
+Tutorial Cover:
+
+1. JavaScript OOP Complete Tutorial
+
+2. JavaScript Class and Object Tutorial
+
+3. How to Create Class in JavaScript
+
+4. How to Create Object of Class in JavaScript
+
+5. How to Create Constructor in Class in JavaScript
+
+6. How to Create Method Inside Class in JavaScript
+
+7. How to Create Static Method in JavaScript
+
+8. JavaScript OOP Inheritance Tutorial
+
+9. JavaScript Parent Child Class
+
+10. Use of Extends keyword in JavaScript
+
+11. Use of this keyword in JavaScript OOP
+
+12. JavaScript Constructor Overriding
+
+13. JavaScript Method Overriding
+
 </pre>
